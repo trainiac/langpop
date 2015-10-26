@@ -1,0 +1,134 @@
+        body {
+            font-family: Helvetica;
+            font-size: 24px;
+            background-color: #f6f6f6;
+            padding:50px 0 0 0;
+        }
+        .hide {
+            display: none;
+        }
+        .game-container {
+            border: 1px solid transparent;
+            text-align: center;
+        }
+        .mistake input, .mistake .test-box {
+            background: #ffd4cc;
+            color: #dd381d;
+        }
+        .correct input, .correct .test-box {
+            background: #def0a5;
+            color: #7eb530;
+        }
+        .test-box {
+            background: #ccc;
+            display: block;
+            float: left;
+            width: 48%;
+            padding:40px 0;
+            min-width: 320px;
+            margin: 0 5px 5px 0;
+            box-sizing: border-box;
+        }
+        .message {
+            text-align: center;
+            background: #ccc;
+            display: block;
+            padding:40px;
+            margin: 5px 0;
+        }
+        .text-box:last-child{
+            margin: 0 0 5px 0;
+        }
+        .test {
+            margin: 0 0 30px 0;
+        }
+        input[type=text] {
+            background: transparent;
+            padding: 0 0 2px 0px;
+            font-size: 24px;
+            outline: none;
+            -webkit-appearance: none;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid;
+            margin: 0 0 0 4px;
+            text-align: center;
+        }
+        .solution {
+            padding: 10px;
+            color: #888;
+        }
+
+        button {
+            font-size: 24px;
+            background-color: #ccc;
+            box-shadow: none;
+            padding: 40px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .test-box {
+                width: 100%;
+            }
+        }
+
+        table {
+            width: 100%;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 5px 0;
+        }
+
+        table caption, th, td {
+            background: #EED2EE;
+            color: #9F5F9F;
+        }
+        th, td {
+            padding: 5px;
+        }
+        .group:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .score-counter {
+            position: absolute;
+            left: 0px;
+            top: 10px;
+        }
+        .games-left-counter {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .tense-example {
+            font-size: 12px;
+            font-weight: normal;
+            font-style: italic;
+            padding: 10px 75px;
+        }
+
+        .tense-description {
+            font-size: 12px;
+            font-weight: normal;
+            padding: 10px 75px;
+        }
+
+        .tense-example ul, .tense-description ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .tense-example li, .tense-description li {
+            margin-bottom: 5px;
+        }

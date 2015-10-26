@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="VerbGame.css" />`
+    </head>
+    <body>
+        <div clasS="start-screen hide">
+            <div class="choose-verbs hide">
+                 <h1>Escolhe os verbos</h1>
+                 <label for="all_verbs">
+                     Escolhe todos
+                     <input id="all_verbs" type="checkbox" />
+                 </label>
+                 <ul class="choose-verbs">
+                 </ul>
+                 <button class="choose-verbs">Proximo</button>
+            </div>
+            <div class="choose-tenses hide">
+                 <h1>Escolhe os tempos</h1>
+                 <label for="all_tenses">
+                     Escolhe todos
+                     <input id="all_tenses" type="checkbox" />
+                 </label>
+                 <ul class="choose-tenses">
+                 </ul>
+                 <button class="choose-tenses">Começo</button>
+            </div>
+        </div>
+        <div class="game-container hide">
+            <div class="score-counter"></div>
+            <div class="games-left-counter"></div>
+            <div class="test group">
+                <span class="test-box infinitive"></span>
+                <span class="test-box tense">
+                    <div class="tense-name"></div>
+                    <div class="tense-description"></div>
+                    <div class="tense-example"></div>
+                </span>
+            </div>
+            <span class="subject"></span><input type="text"/>
+            <div class="hide solution"></div>
+        </div>
+        <div class="score hide">
+            <button class="play-again-button">Play Again</button>
+            <button class="missed-button hide">Play Missed Conjugations</button>
+            <div class="message"></div>
+            <table class="missed hide">
+                <caption>Missed</caption>
+                <thead>
+                    <th>Sujeito</th>
+                    <th>Verbo</th>
+                    <th>Definição</th>
+                    <th>Tempo</th>
+                    <th>Solução</th>
+                    <th>Resposta</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="VerbGameData.js" charset="utf-8"></script>
+        <script type="text/javascript" src="VerbGame.js" charset="utf-8"></script>
+    </body>
+</html>
